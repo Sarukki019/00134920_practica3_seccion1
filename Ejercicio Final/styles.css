@@ -4,3 +4,21 @@
     --pink: #fabbba;
     --green: #aaf7a3;
 }
+
+.btn-pay {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.btn-pay:hover {
+    background-color: var(--pink);
+}
+.btn-pay:active {
+    background-color: var(--green);
+}
