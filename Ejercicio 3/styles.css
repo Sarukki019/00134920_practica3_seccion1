@@ -1,0 +1,52 @@
+:root {
+    --blue: #86cef3;
+    --white: #ffffff;
+    --pink: #fabbba;
+    --green: #aaf7a3;
+}
+
+.box {
+    display: flex;
+    background-color: var(--pink);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box div {
+    background-color: var(--blue);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 5px;
+    width: 33%;
+}
+
+.box div:first-child {
+    width: 64%;
+}
+
+.item-a {
+    background-color: var(--blue);
+    grid-area: header;
+}
+.item-b {
+    background-color: var(--pink);
+    grid-area: main;
+}
+.item-c {
+    background-color: var(--blue);
+    grid-area: sidebar;
+}
+.item-d {
+    background-color: var(--green);
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+}
